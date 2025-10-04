@@ -1,0 +1,220 @@
+/* parte de cima*/
+.header{
+  background: rgba(0,0,0,0.2);
+  backdrop-filter: blur(6px);
+}
+
+/* lista do lado esquerdo e a parte de baixo */
+.bottom-panel,
+.sidebar {
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(6px);
+}
+
+/* fundo do conteudo e barra de titulo */
+.title-bar,
+.container__content {
+  background: transparent;
+}
+
+/* Toast */
+.toast {}
+
+/* botoes */
+.checkbox-field__checkbox,
+.button {
+  backdrop-filter: blur(6px);
+  background-color: transparent;
+  border-radius: 50px;
+  border: solid 1px;
+}
+
+.button:hover{
+  background-color: rgba(221, 221, 221, 0.2);
+}
+
+.checkbox-field__checkbox.checked,
+.button.button--primary{
+  background: linear-gradient(to right, #bc42a5 10%, #8c3cbe 90%);
+  border: solid 1px #8c3cbe;
+}
+
+.sidebar-profile__friends-button{
+  background-color: transparent;
+  border-radius: 50px;
+  border: solid 1px;
+}
+
+/* fundo */
+#root{
+  /*background: url(https://i.imgur.com/5QUsszI.jpeg);*/
+  background: url(https://i.imgur.com/CwBpkh6.jpeg);
+  background-size: 1400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(225, 225, 225);
+}
+
+/* Entrada de Texto */
+.text-field-container__text-field--dark,
+.text-field-container__text-field--primary,
+.header__search{
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  border: solid 0px;
+  padding: 0px 5px;
+}
+
+/* Cor do Placeholder da entrada de texto */
+.text-field-container__text-field-input::placeholder,
+.text-field-container__text-field--primary::placeholder,
+.header__action-button,
+.header__search-input::placeholder{
+  color: rgb(225, 225, 225) !important;
+}
+
+.settings__content,
+.catalogue__filters-container,
+.friends-box__box,
+.user-stats__box,
+.recent-games__box,
+.download-group__item,
+.game-item{
+  background-color: rgba(0,0,0,0.2);
+  backdrop-filter: blur(6px);
+  border-radius: 25px;
+}
+
+/* Popout */
+.modal{
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 25px;
+}
+
+.settings-download-sources__item{
+  background-color: rgba(0,0,0,0);
+  backdrop-filter: blur(6px);
+  border-radius: 25px;
+}
+
+/* opções de download */
+.repacks-modal__repack-button{
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  border: solid 0px;
+}
+
+/* Janela sobre o jogo */
+.content-sidebar,
+.sidebar-section__button,
+.description-header{
+  background: rgba(0,0,0,0.2);
+}
+
+.game-details__description-container{
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(6px);
+}
+
+/* Fundo escuro de Popup */
+.backdrop{
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+}
+
+/* Animação Fade-in */
+@keyframes backdrop-fade-in{
+  0% {
+    backdrop-filter: blur(0px);
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+@keyframes backdrop-fade-out{
+  0% {
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  100% {
+    backdrop-filter: blur(0px);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+/* seleções arredondadas */
+.user-stats__list-item,
+.recent-games__list-item,
+.sidebar__menu-item,
+.sidebar-profile__button{
+  border-radius: 15px;
+}
+
+/* menu */
+.dropdown-menu__content{
+  background-color: transparent;
+  backdrop-filter: blur(6px);
+  border-radius: 15px;
+}
+
+.dropdown-menu__item{
+  border-radius: 12px;
+  color: rgb(225, 225, 225);
+}
+
+.dropdown-menu__item:hover{
+  background-color: rgba(221, 221, 221, 0.2);
+}
+
+.dropdown-menu__separator{
+  background-color: transparent;
+}
+
+/* quando o cursor fica em cima dos botões do sidebar */ 
+.sidebar-profile__button:hover,
+.sidebar__menu-item:hover{
+  background-color: rgba(221, 221, 221, 0.2);
+}
+
+/* botões do sidebar ativadas */
+.sidebar__menu-item.sidebar__menu-item--active{
+  background: linear-gradient(to right, rgba(221, 221, 221, 0.4) 10%, transparent 90%);
+}
+
+/* cor dos titulos dos downloads */
+.download-group__title{
+  color: rgb(225, 225, 225);
+}
+
+/* botão de biblioteca */
+.sidebar__play-button--active{
+  color: #8c3cbe;
+}
+
+/* tela de conquistas */
+.achievement-panel{
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(6px);
+}
+
+.achievements__list{
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(6px);
+}
+
+/* item de filtro */
+.filter-item{
+  backdrop-filter: blur(6px);
+  background-color: transparent;
+  border-radius: 50px;
+  border: solid 1px;
+  color: rgb(225, 225, 225);
+}
+.filter-item__remove-button{
+  color: rgb(225, 225, 225);
+}
